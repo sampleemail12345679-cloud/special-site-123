@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+
+
+* {
+    /* Fixed the invalid transition syntax */
+    transition: all 0.3s ease;
+   
+    box-sizing: border-box;
+    /* Added for better layout consistency */
+}
+
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.na1aa {
+    box-shadow: 0px 0px 173px -27px rgba(231, 231, 231, 0.689);
+    animation: shadower 4s infinite;
+  
+}
+@keyframes shadower {
+    50%{
+        box-shadow: 0px 10px 190px -27px rgb(231, 231, 231);
+    }
+}
+
+.idk {
+    box-shadow: 0px 20px 173px -57px rgba(255, 255, 255, 0.5);
+    
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 170px;
+}
+
+.bt {
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    width: 140px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.in1{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    text-indent:10px;
+
+    background: rgb(0, 0, 0);
+
+   
+}
+.b2{
+
+    background: rgb(0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding-inline: 20px !important;
+    height: 40px;
+    
+}
+
+.na2{
+    box-shadow: 0px -20px 200px -100px  white ;
+    
+}
+.bt2 {
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    margin-top: 29px;
+    text-decoration: none;
+    transition: box-shadow 04s ease-in-out;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    animation:idm 4s infinite linear;
+}
+.bt2:hover {
+    scale: 1.1;
+    transition:0.3s;
+}
+@keyframes idm {
+    50%{
+        box-shadow: 0px 0px 173px -27px rgb(255, 255, 255);
+    }
+}
+
+.incs{
+border: 1px solid white;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffa200; }
+    
+    
+.abd{
+    border: 1px solid white;
+}

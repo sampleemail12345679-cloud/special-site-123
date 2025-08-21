@@ -1,8 +1,10 @@
+/* globals.css - Fixed version */
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  /* Changed from #ffffff to black */
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -14,13 +16,40 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
+    /* Ensure it stays black in dark mode */
     --foreground: #ededed;
   }
 }
 
+/* Force black background on html and body */
+html {
+  background: #000000 !important;
+}
+
 body {
-  background: var(--background);
+  background: #000000 !important;
+  /* More specific black value */
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Scrollbar styling - Fixed */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffa200;
 }

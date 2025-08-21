@@ -10,14 +10,15 @@ import {
   SignUpButton,
   UserButton,
 } from "@clerk/nextjs";
-import { SignIn } from "@clerk/elements/sign-in";
+
 import React, { useState } from "react";
 import { RiSearch2Line } from "react-icons/ri";
 import { CgShoppingCart } from "react-icons/cg";
 import { AiOutlineUser } from "react-icons/ai";
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
-import Searchbox from "../Components/Searchbbox"
-import Cart from "../Components/Cart"
+import Link from "next/link";
+import Searchbox from "./Searchbbox"
+import Cart from "./Cart"
 import "../index.css";
 
 const Navbar = () => {
@@ -31,29 +32,28 @@ const Navbar = () => {
   return (
     <>
     
-      <header className="  h-30 text-white sticky top-0 z-50 outline-none">
-        <nav className="w-full h-20 px-4 flex items-center backdrop-blur-[10px] justify-around max-w-screen-xl mx-auto na1aa overflow-hidden !mt-2 rounded-3xl bg-[rgb(0,0,0,0.7)]">
-          <a href="#" className="text-[27px] font-normal ">
+      <header className="   text-white sticky top-0 z-50 outline-none">
+        <nav className="w-screen h-26   flex items-center backdrop-blur-[10px] justify-around shadow-[0px_0px_173px_-27px_rgba(231,_231,231,0.689)] mx-auto animate-[shadower_4s_infinite] bg-[rgb(0,0,0,0.7)]">
+          <a href="#" className="text-[25px] font-normal ">
             ClonicalClone
            
           </a>
-          
-          <div className="hidden md:flex gap-10 text-[16px]">
-          <a href="/" className="hover:text-gray-400 transition">
+          <div className={`md:flex  text-lg items-center gap-13 hidden`}>
+          <Link href="/" className="hover:text-gray-400 transition">
               Home
-            </a>
-            <a href="/Product" className="hover:text-gray-400 transition">
+            </Link>
+           
+          <Link href="/Product" className="hover:text-gray-400 transition">
               Shop
-            </a>
-            <a href="/About" className="hover:text-gray-400 transition">
+          </Link>
+          <Link href="/About" className="hover:text-gray-400 transition">
               About
-            </a>
+          </Link>
          
-            <a href="/Contact" className="hover:text-gray-400 transition">
+          <Link href="/Contact" className="hover:text-gray-400 transition">
               Contact
-            </a>
+          </Link>
           </div>
-
           {/* Icons */}
           <div className="hidden md:flex gap-6 text-2xl items-center">
           <RiSearch2Line
@@ -99,27 +99,29 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="md:hidden bg-black text-white flex flex-col items-center gap-6 py-6 transition-all duration-300 idk">
-            <a href="/" className="hover:text-gray-400">
+        <>
+        <div className=" w-full h-screen bg-black relative z-40 flex flex-col items-center justify-center gap-14 " >
+            <Link href="/" className="hover:text-gray-400">
               Home
-            </a>
-            <a href="/Product" className="hover:text-gray-400">
-              Shop
-            </a>
+            </Link>
             
-            <a href="/About" className="hover:text-gray-400">
+            <Link href="/Product" className="hover:text-gray-400">
+              Shop
+            </Link>
+            
+            <Link href="/About" className="hover:text-gray-400">
               About
-            </a>
+            </Link>
         
-            <a href="/Contact" className="hover:text-gray-400">
+            <Link href="/Contact" className="hover:text-gray-400">
               Contact
-            </a>
+            </Link>
             <div className="flex gap-6 text-[26px] mt-4">
             <RiSearch2Line
   className="hover:text-gray-400 cursor-pointer"
   onClick={() => setIsSearchOpen(true)}
 />
-              <CgShoppingCart lassName="hover:text-gray-400 cursor-pointer"
+              <CgShoppingCart className="hover:text-gray-400 cursor-pointer"
   onClick={() => setIsCartOpen(true)}/>
               <SignedIn>
                 <UserButton />
@@ -132,7 +134,8 @@ const Navbar = () => {
                 </SignInButton>
               </SignedOut>
             </div>
-          </div>
+            </div>
+          </>
         )}
       </header>
       {isCartOpen && (

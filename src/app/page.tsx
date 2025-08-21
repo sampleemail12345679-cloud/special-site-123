@@ -34,11 +34,7 @@ export default function Home() {
     
       <Navbar />
       <Homes />
-      <FeaturedProducts />
-      <Newsletter />
-      <Testimonial />
-      <Certificate />
-      <Footers />
+
     </>
   );
 }

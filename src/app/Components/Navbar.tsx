@@ -32,8 +32,8 @@ const Navbar = () => {
   return (
     <>
     
-      <header className="   text-white sticky top-0 z-50 outline-none">
-        <nav className="w-screen h-26   flex items-center backdrop-blur-[10px] justify-around shadow-[0px_0px_173px_-27px_rgba(231,_231,231,0.689)] mx-auto animate-[shadower_4s_infinite] bg-[rgb(0,0,0,0.7)]">
+      <header className="   text-white sticky top-0 z-50 outline-none w-full ">
+        <nav className="w-full h-26   flex items-center backdrop-blur-[10px] justify-around shadow-[0px_0px_173px_-27px_rgba(231,_231,231,0.689)] mx-auto animate-[shadower_4s_infinite] bg-[rgb(0,0,0,0.7)]">
           <a href="#" className="text-[25px] font-normal ">
             ClonicalClone
            

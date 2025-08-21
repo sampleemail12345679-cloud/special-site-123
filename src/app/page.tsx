@@ -6,7 +6,6 @@ import Newsletter from './Components/Newsletter';
 import FeaturedProducts from './Components/FeaturedProducts';
 import Footers from './Components/Footers';
 import Testimonial from './Components/Testimonial';
-import Certificate from './Components/Certificate';
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 export default function Home() {
@@ -34,7 +33,10 @@ export default function Home() {
     
       <Navbar />
       <Homes />
-
+      <FeaturedProducts />
+      <Testimonial />
+      <Newsletter />
+     <Footers />
     </>
   );
 }

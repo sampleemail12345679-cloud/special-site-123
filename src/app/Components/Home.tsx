@@ -8,7 +8,7 @@ import Image from "next/image"
 const Home = () => {
     return (
         <>
-            <section className="w-full  ">
+            <section className="w-full overflow-x-hidden ">
                 {/* Hero Section */}
                 <div className="flex flex-col lg:flex-row w-full min-h-screen  !px-4 sm:!px-6 lg:!px-14 xl:!px-12 2xl:!px-16 !py-8 lg:!py-0 !gap-12 md:!mt-0 !mt-50 overflow-x-hidden">
 

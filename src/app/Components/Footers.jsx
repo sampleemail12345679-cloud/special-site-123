@@ -52,7 +52,7 @@ const Footers = () => {
     </div>
   </div>
   <div >
-    <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row gap-7 !-mt-10 !mb-1 text-white">
+    <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row gap-7  text-white">
       <p className=" text-sm text-center sm:text-left ">© 2025 ClonicalClone  —
         
       </p>

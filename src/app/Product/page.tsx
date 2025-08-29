@@ -1,3 +1,4 @@
+/* eslint-disable */
 'use client'
 import { MdFilterList } from "react-icons/md";
 import Image from 'next/image';

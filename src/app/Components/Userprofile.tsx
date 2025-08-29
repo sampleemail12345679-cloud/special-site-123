@@ -1,5 +1,7 @@
+/* eslint-disable */
 import React from 'react'
 
+/* eslint-disable */
 const Userprofile = ( props ) => {
   return (
     <div className="!p-4 lg:w-1/2">

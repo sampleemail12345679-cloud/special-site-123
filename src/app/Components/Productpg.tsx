@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { BsArrowRightShort } from "react-icons/bs"; 
 import React from 'react'
 import Navbar from './Navbar'

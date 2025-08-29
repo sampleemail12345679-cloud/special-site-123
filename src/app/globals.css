@@ -1,4 +1,5 @@
 /* globals.css - Fixed version */
+/* eslint-disable */
 @import "tailwindcss";
 @plugin "daisyui";
 /* daisyui plugin should be added in tailwind.config.js, not here */

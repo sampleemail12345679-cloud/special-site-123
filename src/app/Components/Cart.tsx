@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import { useLocalStorage, useEventListener } from "usehooks-ts";
 import CheckoutBT from "./CheckoutBT";

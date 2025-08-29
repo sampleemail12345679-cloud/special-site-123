@@ -4,110 +4,143 @@
     "brand": "Rolex",
     "name": "Rolex Submariner Two Tone Black",
     "category": "Luxury Diver",
-    "price": 2217485.0,
+    "price": 3298350,
     "image": "/images/rolex-submariner-black.jpg",
     "rating": 10721,
-    "description": "An iconic diver’s watch crafted from robust Oystersteel and 18k yellow gold, offering 300m water resistance, a scratch-resistant Cerachrom bezel, and supreme legibility with timeless Submariner styling beloved by professionals and collectors alike."
+    "description": "An iconic diver’s watch crafted from robust Oystersteel and 18k yellow gold, offering 300m water resistance, a scratch-resistant Cerachrom bezel, and supreme legibility with timeless Submariner styling beloved by professionals and collectors alike.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Golden",
+    "type": "Mechanical"
   },
   {
     "id": 2,
     "brand": "Audemars Piguet",
     "name": "Audemars Piguet Royal Oak Black",
     "category": "Luxury Sport",
-    "price": 31073235.0,
+    "price": 31073235,
     "image": "/images/Audemars-Piguet-Royal-Oak-Perpetual-Calendar-Openworked-Black-Ceramic-3.jpg",
     "rating": 5467,
-    "description": "The legendary octagonal Royal Oak features a striking black 'Tapisserie' dial, integrated stainless steel bracelet, and a beautifully finished automatic movement that revolutionized luxury sports watches."
+    "description": "The legendary octagonal Royal Oak features a striking black 'Tapisserie' dial, integrated stainless steel bracelet, and a beautifully finished automatic movement that revolutionized luxury sports watches.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Black",
+    "type": "Mechanical"
   },
   {
     "id": 3,
     "brand": "Seiko",
     "name": "Seiko Prospex 'Arnie' SNJ025",
     "category": "Luxury Sport",
-    "price": 36999.0,
+    "price": 36999,
     "image": "/images/Seiko-Prospex-Arnie-2_fde1398b-1529-4b20-aa1d-2852c5e7d164.webp",
     "rating": 5467,
-    "description": "A rugged hybrid analog-digital diver popularized by Arnold Schwarzenegger, with solar power, alarm, stopwatch, and 200m water resistance for true professional performance."
+    "description": "A rugged hybrid analog-digital diver popularized by Arnold Schwarzenegger, with solar power, alarm, stopwatch, and 200m water resistance for true professional performance.",
+    "strap_material": "Silicon",
+    "strap_color": "Black",
+    "type": "Combined"
   },
   {
     "id": 4,
     "brand": "Omega",
     "name": "Omega Seamaster Diver 300m",
     "category": "Chronograph",
-    "price": 706771.0,
+    "price": 706999,
     "image": "/images/thumbnail-1-0.webp",
     "rating": 6210,
-    "description": "Professional-grade diving chronograph with a helium escape valve, ceramic bezel, and a high-precision Co-Axial Master Chronometer movement designed for both underwater adventures and refined daily wear."
+    "description": "Professional-grade diving chronograph with a helium escape valve, ceramic bezel, and a high-precision Co-Axial Master Chronometer movement designed for both underwater adventures and refined daily wear.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Silver",
+    "type": "Mechanical"
   },
   {
     "id": 5,
     "brand": "Cartier",
     "name": "Cartier Santos Black",
     "category": "Dress",
-    "price": 702593.0,
+    "price": 702593,
     "image": "/images/cartier-santos-black.jpg",
     "rating": 7652,
-    "description": "This modern reimagining of Cartier’s pioneering Santos combines a sleek ADLC-coated steel case, a crisp black dial, and a quick-change strap system for effortless versatility."
+    "description": "This modern reimagining of Cartier’s pioneering Santos combines a sleek ADLC-coated steel case, a crisp black dial, and a quick-change strap system for effortless versatility.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Black",
+    "type": "Mechanical"
   },
   {
     "id": 6,
     "brand": "Movado",
     "name": "Movado Series 800 Black",
     "category": "Dress/Sport",
-    "price": 112507.0,
+    "price": 112507,
     "image": "/images/movado-series-800-black.jpg",
     "rating": 4398,
-    "description": "A clean black dial with luminous markers, sporty chronograph subdials, and a unidirectional bezel come together in a contemporary design showcasing Movado’s signature minimalist style."
+    "description": "A clean black dial with luminous markers, sporty chronograph subdials, and a unidirectional bezel come together in a contemporary design showcasing Movado’s signature minimalist style.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Silver",
+    "type": "Mechanical"
   },
   {
     "id": 7,
     "brand": "Hamilton",
     "name": "Hamilton Khaki Field Day-Date",
     "category": "Field",
-    "price": 47526.0,
+    "price": 47526,
     "image": "/images/hamilton-khaki-field-black.jpg",
     "rating": 5112,
-    "description": "Military-inspired field watch boasting a matte black dial, large numerals, and a day-date window at 12 o’clock, ready for rugged exploration and everyday reliability."
+    "description": "Military-inspired field watch boasting a matte black dial, large numerals, and a day-date window at 12 o’clock, ready for rugged exploration and everyday reliability.",
+    "strap_material": "Leather",
+    "strap_color": "Black",
+    "type": "Mechanical"
   },
   {
     "id": 8,
     "brand": "NOMOS",
     "name": "NOMOS Glashütte Tangente Neomatik Black",
     "category": "Minimalist Dress",
-    "price": 312000.0,
+    "price": 312000,
     "image": "/images/nomos-tangente-black.jpg",
     "rating": 4875,
-    "description": "This Bauhaus-inspired timepiece features a slim automatic movement and a stark black dial with crisp typography, reflecting NOMOS’ celebrated minimalist German design."
+    "description": "This Bauhaus-inspired timepiece features a slim automatic movement and a stark black dial with crisp typography, reflecting NOMOS’ celebrated minimalist German design.",
+    "strap_material": "Leather",
+    "strap_color": "Black",
+    "type": "Mechanical"
   },
   {
     "id": 9,
     "brand": "Junghans",
     "name": "Junghans Max Bill Automatic Black",
     "category": "Minimalist Dress",
-    "price": 145000.0,
+    "price": 145000,
     "image": "/images/junghans-max-bill-black.jpg",
     "rating": 4221,
-    "description": "Sleek and understated, this modern Max Bill showcases clean lines and a timeless black dial that embodies the purity of Bauhaus aesthetics."
+    "description": "Sleek and understated, this modern Max Bill showcases clean lines and a timeless black dial that embodies the purity of Bauhaus aesthetics.",
+    "strap_material": "Leather",
+    "strap_color": "Black",
+    "type": "Mechanical"
   },
   {
     "id": 10,
     "brand": "Seiko",
     "name": "Seiko Presage Sharp Edged Black",
     "category": "Dress",
-    "price": 80000.0,
+    "price": 80000,
     "image": "/images/seiko-presage-sharp-edge-black.jpg",
     "rating": 6305,
-    "description": "Refined Japanese artistry is evident in the textured black dial and precise automatic movement of this elegant Presage dress watch."
+    "description": "Refined Japanese artistry is evident in the textured black dial and precise automatic movement of this elegant Presage dress watch.",
+    "strap_material": "Leather",
+    "strap_color": "Black",
+    "type": "Mechanical"
   },
-  {
+   {
     "id": 11,
-    "brand": "Bell & Ross",
-    "name": "Bell & Ross BR 03-92 Black Matte",
-    "category": "Pilot",
-    "price": 290000.0,
-    "image": "/images/bell-ross-br03-black.jpg",
-    "rating": 5989,
-    "description": "A bold square aviation instrument with luminous numerals and a matte black ceramic case, designed for uncompromising legibility and cockpit-inspired style."
+    "brand": "Citizen",
+    "name": "Citizen Promaster Diver Black",
+    "category": "Diver",
+    "price": 45000.0,
+    "image": "/images/citizen-promaster-diver-black.jpg",
+    "rating": 5894,
+    "description": "Robust ISO-certified diver with Eco-Drive solar power, a unidirectional bezel, and luminous markers for reliable underwater performance and everyday wear.",
+    "strap_material": "Polyurethane",
+    "strap_color": "Black",
+    "type": "Combined"
   },
   {
     "id": 12,
@@ -117,7 +150,10 @@
     "price": 160000.0,
     "image": "/images/rado-true-thinline-black.jpg",
     "rating": 6743,
-    "description": "This ultra-thin masterpiece combines Rado’s high-tech black ceramic with a sleek minimalist dial for a dress watch that feels featherlight on the wrist."
+    "description": "This ultra-thin masterpiece combines Rado’s high-tech black ceramic with a sleek minimalist dial for a dress watch that feels featherlight on the wrist.",
+    "strap_material": "Ceramic",
+    "strap_color": "Black",
+    "type": "Mechanical"
   },
   {
     "id": 13,
@@ -127,7 +163,10 @@
     "price": 410000.0,
     "image": "/images/grand-seiko-sbga467.jpg",
     "rating": 7052,
-    "description": "Elegant Spring Drive movement powers this textured black-dial Grand Seiko, blending traditional Japanese craftsmanship with cutting-edge horology."
+    "description": "Elegant Spring Drive movement powers this textured black-dial Grand Seiko, blending traditional Japanese craftsmanship with cutting-edge horology.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Silver",
+    "type": "Mechanical"
   },
   {
     "id": 14,
@@ -137,7 +176,10 @@
     "price": 240000.0,
     "image": "/images/tag-heuer-carrera-black.jpg",
     "rating": 5318,
-    "description": "A sporty yet refined automatic Carrera featuring a sunray black dial, polished indices, and the reliable Calibre 5 movement for modern versatility."
+    "description": "A sporty yet refined automatic Carrera featuring a sunray black dial, polished indices, and the reliable Calibre 5 movement for modern versatility.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Silver",
+    "type": "Mechanical"
   },
   {
     "id": 15,
@@ -147,7 +189,10 @@
     "price": 550000.0,
     "image": "/images/panerai-luminor-black.jpg",
     "rating": 6821,
-    "description": "Iconic cushion-case diver with a stark black dial, oversized numerals, and signature crown guard—crafted for underwater adventure and bold wrist presence."
+    "description": "Iconic cushion-case diver with a stark black dial, oversized numerals, and signature crown guard—crafted for underwater adventure and bold wrist presence.",
+    "strap_material": "Leather",
+    "strap_color": "Black",
+    "type": "Mechanical"
   },
   {
     "id": 16,
@@ -157,7 +202,10 @@
     "price": 180000.0,
     "image": "/images/oris-sixty-five-black.jpg",
     "rating": 5103,
-    "description": "Vintage-inspired diver blending modern materials and retro styling with a domed crystal and luminous markers evoking the original 1960s design."
+    "description": "Vintage-inspired diver blending modern materials and retro styling with a domed crystal and luminous markers evoking the original 1960s design.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Silver",
+    "type": "Mechanical"
   },
   {
     "id": 17,
@@ -167,7 +215,10 @@
     "price": 60000.0,
     "image": "/images/tissot-gentleman-black.jpg",
     "rating": 4519,
-    "description": "A polished stainless steel case and crisp black dial with date window make this versatile Gentleman perfect for both casual and formal wear."
+    "description": "A polished stainless steel case and crisp black dial with date window make this versatile Gentleman perfect for both casual and formal wear.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Silver",
+    "type": "Mechanical"
   },
   {
     "id": 18,
@@ -177,7 +228,10 @@
     "price": 25000.0,
     "image": "/images/citizen-bm8475.jpg",
     "rating": 4029,
-    "description": "This solar-powered field watch features bold luminous numerals and a rugged canvas strap, offering everyday durability without the need for a battery change."
+    "description": "This solar-powered field watch features bold luminous numerals and a rugged canvas strap, offering everyday durability without the need for a battery change.",
+    "strap_material": "Canvas",
+    "strap_color": "Black",
+    "type": "Combined"
   },
   {
     "id": 19,
@@ -187,7 +241,10 @@
     "price": 15000.0,
     "image": "/images/casio-edifice-black.jpg",
     "rating": 4215,
-    "description": "Affordable and sporty, this steel chronograph boasts a detailed black dial, blue accents, and reliable quartz performance for active lifestyles."
+    "description": "Affordable and sporty, this steel chronograph boasts a detailed black dial, blue accents, and reliable quartz performance for active lifestyles.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Silver",
+    "type": "Digital"
   },
   {
     "id": 20,
@@ -197,7 +254,10 @@
     "price": 30000.0,
     "image": "/images/seiko-5-sports-black.jpg",
     "rating": 5674,
-    "description": "A dependable automatic diver with classic Seiko styling, including a unidirectional bezel, luminous markers, and robust water resistance."
+    "description": "A dependable automatic diver with classic Seiko styling, including a unidirectional bezel, luminous markers, and robust water resistance.",
+    "strap_material": "Nylon",
+    "strap_color": "Black",
+    "type": "Mechanical"
   },
   {
     "id": 21,
@@ -207,7 +267,10 @@
     "price": 60000.0,
     "image": "/images/baltic-hms-black.jpg",
     "rating": 4333,
-    "description": "Vintage-inspired dress watch with hand-wound movement, a domed crystal, and a warm black dial channeling mid-century elegance."
+    "description": "Vintage-inspired dress watch with hand-wound movement, a domed crystal, and a warm black dial channeling mid-century elegance.",
+    "strap_material": "Leather",
+    "strap_color": "Black",
+    "type": "Mechanical"
   },
   {
     "id": 22,
@@ -217,7 +280,10 @@
     "price": 2678999.0,
     "image": "/images/Zenith-Defy-Extreme-2_c824b1a4-97e2-4e36-ac94-d3f4db2be0a2.webp",
     "rating": 4896,
-    "description": "A bold Swiss-made diver in a slim 39mm case, featuring cutting-edge materials and Zenith’s high-frequency movement for exceptional precision."
+    "description": "A bold Swiss-made diver in a slim 39mm case, featuring cutting-edge materials and Zenith’s high-frequency movement for exceptional precision.",
+    "strap_material": "Titanium",
+    "strap_color": "Silver",
+    "type": "Mechanical"
   },
   {
     "id": 23,
@@ -227,7 +293,10 @@
     "price": 90000.0,
     "image": "/images/mido-ocean-star-black.jpg",
     "rating": 5041,
-    "description": "Durable Swiss diver with 200m water resistance, a rippled black dial, and reliable automatic movement for everyday seafaring adventures."
+    "description": "Durable Swiss diver with 200m water resistance, a rippled black dial, and reliable automatic movement for everyday seafaring adventures.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Silver",
+    "type": "Mechanical"
   },
   {
     "id": 24,
@@ -237,7 +306,10 @@
     "price": 160000.0,
     "image": "/images/sinn-556-black.jpg",
     "rating": 5220,
-    "description": "A no-nonsense German tool watch with a clean black dial, day-date function, and superior engineering designed to withstand the toughest conditions."
+    "description": "A no-nonsense German tool watch with a clean black dial, day-date function, and superior engineering designed to withstand the toughest conditions.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Silver",
+    "type": "Mechanical"
   },
   {
     "id": 25,
@@ -247,7 +319,10 @@
     "price": 190000.0,
     "image": "/images/maurice-lacroix-aikon-black.jpg",
     "rating": 4713,
-    "description": "Sporty integrated-bracelet luxury watch with a black Clous de Paris dial, bold indices, and a powerful automatic movement inside."
+    "description": "Sporty integrated-bracelet luxury watch with a black Clous de Paris dial, bold indices, and a powerful automatic movement inside.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Silver",
+    "type": "Mechanical"
   },
   {
     "id": 26,
@@ -257,7 +332,10 @@
     "price": 160000.0,
     "image": "/images/longines-hydroconquest-black.jpg",
     "rating": 4888,
-    "description": "Swiss diver with a scratch-resistant ceramic bezel, 300m water resistance, and refined styling that bridges sport and sophistication."
+    "description": "Swiss diver with a scratch-resistant ceramic bezel, 300m water resistance, and refined styling that bridges sport and sophistication.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Silver",
+    "type": "Mechanical"
   },
   {
     "id": 27,
@@ -267,7 +345,10 @@
     "price": 70000.0,
     "image": "/images/victorinox-inox-black.jpg",
     "rating": 5032,
-    "description": "Virtually indestructible, the INOX endures extreme tests with a black dial and rugged case built to withstand any adventure."
+    "description": "Virtually indestructible, the INOX endures extreme tests with a black dial and rugged case built to withstand any adventure.",
+    "strap_material": "Rubber",
+    "strap_color": "Black",
+    "type": "Mechanical"
   },
   {
     "id": 28,
@@ -277,7 +358,10 @@
     "price": 50000.0,
     "image": "/images/laco-augsburg-black.jpg",
     "rating": 4197,
-    "description": "Authentic German Flieger watch with a stark black dial and luminous hands inspired by WWII pilot instrumentation."
+    "description": "Authentic German Flieger watch with a stark black dial and luminous hands inspired by WWII pilot instrumentation.",
+    "strap_material": "Leather",
+    "strap_color": "Black",
+    "type": "Mechanical"
   },
   {
     "id": 29,
@@ -287,7 +371,10 @@
     "price": 180000.0,
     "image": "/images/zodiac-super-sea-wolf-black.jpg",
     "rating": 4598,
-    "description": "Retro-inspired diver with vintage styling cues, a bold bezel, and robust construction paying homage to Zodiac’s pioneering dive heritage."
+    "description": "Retro-inspired diver with vintage styling cues, a bold bezel, and robust construction paying homage to Zodiac’s pioneering dive heritage.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Silver",
+    "type": "Mechanical"
   },
   {
     "id": 30,
@@ -297,7 +384,10 @@
     "price": 110000.0,
     "image": "/images/farer-lander-black.jpg",
     "rating": 4755,
-    "description": "A whimsical GMT combining a multi-layered black dial, playful color accents, and independent hour hand for effortless travel timekeeping."
+    "description": "A whimsical GMT combining a multi-layered black dial, playful color accents, and independent hour hand for effortless travel timekeeping.",
+    "strap_material": "Leather",
+    "strap_color": "Black",
+    "type": "Mechanical"
   },
   {
     "id": 31,
@@ -307,6 +397,126 @@
     "price": 150000.0,
     "image": "/images/formex-essence-black.jpg",
     "rating": 4877,
-    "description": "This sport-dress hybrid features a detailed black dial with racing-inspired textures, a patented suspension case, and refined Swiss engineering."
+    "description": "This sport-dress hybrid features a detailed black dial with racing-inspired textures, a patented suspension case, and refined Swiss engineering.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Silver",
+    "type": "Mechanical"
+  },
+  {
+    "id": 32,
+    "brand": "Patek Philippe",
+    "name": "Nautilus 5711 Blue Dial",
+    "category": "Luxury Sport",
+    "price": 57000000,
+    "image": "/images/patek-nautilus-5711-blue.jpg",
+    "rating": 9876,
+    "description": "Legendary Genta-designed sports icon with a blue dial, integrated steel bracelet, and ultra-slim automatic movement.",
+    "strap_material": "Stainless Steel",
+    "strap_color": "Silver",
+    "type": "Mechanical"
+  },
+  {
+    "id": 33,
+    "brand": "Vacheron Constantin",
+    "name": "Overseas Dual Time Black",
+    "category": "Luxury Sport",
+    "price": 2950000,
+    "image": "/images/vc-overseas-black.jpg",
+    "rating": 7845,
+    "description": "Elegant dual-time luxury sports model with black dial and interchangeable straps for versatile wear.",
+    "strap_material": "Rubber",
+    "strap_color": "Black",
+    "type": "Mechanical"
+  },
+  {
+    "id": 34,
+    "brand": "Hublot",
+    "name": "Big Bang Unico Black Magic",
+    "category": "Sport Chronograph",
+    "price": 2100000,
+    "image": "/images/hublot-big-bang-black.jpg",
+    "rating": 6331,
+    "description": "Bold ceramic chronograph with skeletonized dial, rubber strap, and Hublot’s distinct Unico movement.",
+    "strap_material": "Rubber",
+    "strap_color": "Black",
+    "type": "Mechanical"
+  },
+  {
+    "id": 35,
+    "brand": "Jaeger-LeCoultre",
+    "name": "Reverso Tribute Black",
+    "category": "Dress",
+    "price": 645000,
+    "image": "/images/jlc-reverso-black.jpg",
+    "rating": 5250,
+    "description": "Iconic Art Deco reversible dress watch in stainless steel with a rich black dial and premium leather strap.",
+    "strap_material": "Leather",
+    "strap_color": "Black",
+    "type": "Mechanical"
+  },
+  {
+    "id": 36,
+    "brand": "Tudor",
+    "name": "Black Bay Fifty-Eight 925",
+    "category": "Diver",
+    "price": 345000,
+    "image": "/images/tudor-bb-58-925.jpg",
+    "rating": 6600,
+    "description": "Popular vintage-inspired diver in 39mm silver case, grey suede strap, and black/silver dial for timeless style.",
+    "strap_material": "Leather",
+    "strap_color": "Grey",
+    "type": "Mechanical"
+  },
+  {
+    "id": 37,
+    "brand": "Breguet",
+    "name": "Classique Automatic Black",
+    "category": "Luxury Dress",
+    "price": 1300000,
+    "image": "/images/breguet-classique-black.jpg",
+    "rating": 4211,
+    "description": "Masterpiece of guilloché, blued hands, and delicate black enamel dial on an alligator leather strap.",
+    "strap_material": "Leather",
+    "strap_color": "Black",
+    "type": "Mechanical"
+  },
+  {
+    "id": 38,
+    "brand": "Richard Mille",
+    "name": "RM 005 Black",
+    "category": "Luxury Exotic",
+    "price": 89000000,
+    "image": "/images/richardmille-rm005.jpg",
+    "rating": 9112,
+    "description": "Ultra-light carbon case, tonneau-shaped, skeletonized movement, and high-tech performance for collectors.",
+    "strap_material": "Carbon Fiber",
+    "strap_color": "Black",
+    "type": "Mechanical"
+  },
+  {
+    "id": 39,
+    "brand": "Breitling",
+    "name": "Navitimer B01 Chronograph 43 Black",
+    "category": "Pilot",
+    "price": 684000,
+    "image": "/images/breitling-navitimer-black.jpg",
+    "rating": 5777,
+    "description": "Aviator favorite with in-house chronograph movement, black sunburst dial, and alligator strap.",
+    "strap_material": "Leather",
+    "strap_color": "Black",
+    "type": "Mechanical"
+  },
+  {
+    "id": 40,
+    "brand": "Glashütte Original",
+    "name": "Sixties Square Chronograph Black",
+    "category": "Vintage Dress",
+    "price": 340000,
+    "image": "/images/go-sixties-chrono-black.jpg",
+    "rating": 4550,
+    "description": "Sophisticated retro chronograph with domed black dial and delicate slim leather strap.",
+    "strap_material": "Leather",
+    "strap_color": "Black",
+    "type": "Mechanical"
   }
 ]

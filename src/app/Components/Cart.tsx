@@ -1,57 +1,48 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useLocalStorage, useEventListener } from "usehooks-ts";
+import CheckoutBT from "./CheckoutBT";
 
-import CheckoutBT from "../Components/CheckoutBT";
+type CartItem = {
+  id: string;
+  name: string;
+  image: string;
+  color: string;
+  price: number;
+  quantity: number;
+};
 
 const Cart = ({ onClose }) => {
-  // Sample initial cart items
+  // Persist cart items automatically in localStorage
+  const [items, setItems] = useLocalStorage<CartItem[]>("cart", []);
 
-  const [items, setItems] = useState([]);
+  // Close modal when pressing Escape
+  useEventListener("keydown", (e: KeyboardEvent) => {
+    if (e.key === "Escape") onClose();
+  });
 
-  // Calculate subtotal dynamically
-  const subtotal = items.reduce(
-    (sum, item) => Math.floor((sum + item.price * item.quantity )),
-    0
-  );
-  
-  const vatRate = 0.1; // 10% VAT
-  const vat = subtotal * vatRate;
-  const total = subtotal + vat;
-
-  
-  // Handle quantity change
-  const handleQuantityChange = (id, newQuantity) => {
+  // Update item quantity
+  const handleQuantityChange = (id: string, newQuantity: number) => {
     setItems((prev) =>
       prev.map((item) =>
         item.id === id
-          ? { ...item, quantity: newQuantity < 1 ? 1 : newQuantity }
+          ? { ...item, quantity: Math.max(newQuantity, 1) }
           : item
       )
     );
   };
-  // Max total in GBP, for example:
-const MAX_TOTAL = 79999920;
-const exceedsLimit = total > MAX_TOTAL;
 
-
-  // Handle removing an item
-  const handleRemove = (id) => {
-    const updated = items.filter((item) => item.id !== id);
-    setItems(updated);
-    localStorage.setItem("cart", JSON.stringify(updated));
+  // Remove an item
+  const handleRemove = (id: string) => {
+    setItems((prev) => prev.filter((item) => item.id !== id));
   };
 
-  // Close modal on Escape key
-  useEffect(() => {
-    const handleKey = (e) => {
-      if (e.key === "Escape") onClose();
-    };
-   
-    const stored = JSON.parse(localStorage.getItem("cart")) || [];
-    setItems(stored);
-      
-    window.addEventListener("keydown", handleKey);
-    return () => window.removeEventListener("keydown", handleKey);
-  }, [onClose]);
+  // ---------- CART CALCULATIONS ----------
+  const subtotal = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const vat = subtotal * 0.05; // 5% VAT
+  const total = subtotal + vat;
+
+  const MAX_TOTAL = 79999920;
+  const exceedsLimit = total > MAX_TOTAL;
 
   return (
     <div className="fixed inset-0 bg-black/50 z-50 flex justify-center backdrop-blur-[5px] items-center">
@@ -61,12 +52,14 @@ const exceedsLimit = total > MAX_TOTAL;
         aria-modal="true"
         aria-labelledby="cart-title"
       >
+        {/* Close button */}
         <button
           onClick={onClose}
           className="absolute top-3 right-3 text-gray-500 hover:text-gray-700"
         >
           ✕
         </button>
+
         <h1 id="cart-title" className="text-xl font-bold mb-4">
           Your Cart
         </h1>
@@ -75,6 +68,7 @@ const exceedsLimit = total > MAX_TOTAL;
           <p className="text-center text-gray-500">Your cart is empty.</p>
         ) : (
           <>
+            {/* Items */}
             <ul className="space-y-4">
               {items.map((item) => (
                 <li key={item.id} className="flex items-center gap-4">
@@ -85,25 +79,23 @@ const exceedsLimit = total > MAX_TOTAL;
                   />
                   <div className="flex-1">
                     <h3 className="text-sm font-medium">{item.name}</h3>
-                    <p className="text-xs text-gray-600">
-                      Size: {item.size} · Color: {item.color}
-                    </p>
-                    <p className="text-xs text-gray-600">
-                      Price: ₹{item.price} 
-                    </p>
+                    <p className="text-xs text-gray-600">Color: {item.color}</p>
+                    <p className="text-xs text-gray-600">Price: ₹{item.price}</p>
                   </div>
+
                   <input
                     type="number"
                     value={item.quantity}
                     min={1}
                     onChange={(e) =>
-                      handleQuantityChange(item.id, parseInt(e.target.value))
+                      handleQuantityChange(item.id, parseInt(e.target.value) || 1)
                     }
                     className="w-12 border rounded text-center text-sm"
                   />
+
                   <button
                     onClick={() => handleRemove(item.id)}
-                    className="text-red-500 hover:text-red-700 text-xs"
+                    className="text-red-500 hover:text-red-700 text-xs cursor-pointer"
                   >
                     Remove
                   </button>
@@ -111,29 +103,36 @@ const exceedsLimit = total > MAX_TOTAL;
               ))}
             </ul>
 
+            {/* Summary */}
             <div className="mt-6 border-t pt-4 text-sm space-y-1">
               <div className="flex justify-between">
                 <span>Subtotal</span>
-                <span>${subtotal.toFixed(2)}</span>
+                <span>₹{subtotal.toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
-                <span>VAT (10%)</span>
-                <span>${vat.toFixed(2)}</span>
+                <span>VAT (5%)</span>
+                <span>₹{vat.toFixed(2)}</span>
               </div>
               <div className="flex justify-between font-bold">
                 <span>Total</span>
-                <span>${total.toFixed(2)}</span>
+                <span>₹{total.toFixed(2)}</span>
               </div>
             </div>
+
+            {/* Limit warning */}
             {exceedsLimit && (
-  <p className="text-red-500 text-sm text-center m-2">
-    The total exceeds the maximum allowed amount for checkout.
-  </p>
-)}
-            <button className=" hover:scale-105  "  disabled={exceedsLimit} >
-            
-                  <CheckoutBT total={ total} disabled={exceedsLimit} className="size-full bt"/>
-           
+              <p className="text-red-500 text-sm text-center m-2">
+                The total exceeds the maximum allowed amount for checkout.
+              </p>
+            )}
+
+            {/* Checkout button */}
+            <button className="hover:scale-105" disabled={exceedsLimit}>
+              <CheckoutBT
+                total={total}
+                disabled={exceedsLimit}
+                className="size-full bt !cursor-pointer"
+              />
             </button>
           </>
         )}

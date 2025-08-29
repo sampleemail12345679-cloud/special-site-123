@@ -11,7 +11,7 @@ const Testimonial = () => {
       <span className="inline-block h-1 w-10 rounded bg-white !mt-8 !mb-6"></span>
       <h2 className="text-white font-medium title-font tracking-wider text-sm">Rahul Mehra
 </h2>
-      <p className="text-gray-500"> Intraday Trader</p>
+      <p className="text-gray-400"> Intraday Trader</p>
     </div>
   </div>
 </section>

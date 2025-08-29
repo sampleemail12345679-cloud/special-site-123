@@ -62,7 +62,7 @@ const Page = () => {
         <label htmlFor="message" className="leading-7 text-sm text-white">Message</label>
         <textarea id="message" name="message" className="w-full bg-black rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-white !py-1 !px-3 resize-none leading-6 transition-colors duration-200 ease-in-out incs"></textarea>
       </div>
-      <button className="text-white bg-black  !py-2 !px-6   rounded text-lg bt2 !hover:shadow-[0px_0px_173px_-20px_rgb(255,255,255)]">Button</button>
+      <button className="text-white bg-black  !py-2 !px-6   rounded text-lg bt2 !hover:shadow-[0px_0px_173px_-20px_rgb(255,255,255)]">Send Message</button>
       
     </div>
   </div>

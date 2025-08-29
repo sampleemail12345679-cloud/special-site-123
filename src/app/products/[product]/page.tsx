@@ -24,6 +24,10 @@ export default function Page({ params }: PageProps) {
           description={productObj.description}
           price={productObj.price}
           id={productObj.id}
+          category={productObj.category}
+          material={productObj.strap_material}
+          color={productObj.strap_color}
+          type={productObj.type}
         />
       ) : (
         <div className="text-white p-8">Product not found</div>

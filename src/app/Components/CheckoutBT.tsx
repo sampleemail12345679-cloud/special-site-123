@@ -12,7 +12,7 @@ export default function CheckoutBT({ total }: { total: number }) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ total }),
+      body: JSON.stringify({ total: Number(total) / 83 }),
     });
 
     const data = await res.json();

@@ -1,5 +1,7 @@
 /* globals.css - Fixed version */
 @import "tailwindcss";
+@plugin "daisyui";
+/* daisyui plugin should be added in tailwind.config.js, not here */
 
 :root {
   --background: #000000;

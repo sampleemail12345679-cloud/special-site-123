@@ -13,13 +13,13 @@ export async function POST(req: NextRequest) {
       }
   
       const session = await stripe.checkout.sessions.create({
-        payment_method_types: ["card"],
+      payment_method_types: ["card", "crypto"],
         mode: "payment",
         line_items: [
           {
             price_data: {
               currency: "usd",
-              product_data: { name: "Test Product" },
+              product_data: { name: "Watch" },
               
               unit_amount: Math.round(total * 100),
             },

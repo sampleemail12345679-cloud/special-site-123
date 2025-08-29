@@ -4,11 +4,13 @@ import React from 'react';
 import Productpg from '../../Components/Productpg';
 import data from '../../data.json';
 
-export default function Page({
-  params,
-}: {
-  params: { product: string };
-}) {
+interface PageProps {
+  params: {
+    product: string;
+  };
+}
+
+export default function Page({ params }: PageProps) {
   const productId = params.product;
   const productObj = data.find((item) => String(item.id) === productId);
 

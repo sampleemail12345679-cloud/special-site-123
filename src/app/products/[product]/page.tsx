@@ -4,7 +4,7 @@ import React from 'react';
 import Productpg from '../../Components/Productpg';
 import data from '../../data.json';
 
-export default async function Page({
+export default function Page({
   params,
 }: {
   params: { product: string };

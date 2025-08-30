@@ -9,7 +9,7 @@ import { ToastContainer, toast, Slide } from 'react-toastify';
 const Newsletter = () => {
   const [email, setEmail] = useState('');
   const notify = () => {
-    if (email && email.includes('@') && email.includes('.') && email.length > 5 && !email.includes(' ') && !email.includes('')){ 
+    if (email && email.includes('@') && email.includes('.') && email.length > 5 ){ 
       toast.success('Subscribed successfully!', {
         position: "bottom-right",
         autoClose: 5000,

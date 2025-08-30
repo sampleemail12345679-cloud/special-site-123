@@ -8,15 +8,15 @@ import Image from 'next/image'
 
 
 
-const Productpg = (parms) => {
+const Productpg = (parms: any) => {
   const handleBuyNow = () => {
     const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
   
-    const existingItem = existingCart.find((item) => item.id === parms.id);
+    const existingItem = existingCart.find((item : any) => item.id === parms.id);
   
     let updatedCart;
     if (existingItem) {
-      updatedCart = existingCart.map((item) =>
+      updatedCart = existingCart.map((item : any) =>
         item.id === parms.id
           ? { ...item, quantity: item.quantity + 1 }
           : item

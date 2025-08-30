@@ -1,7 +1,7 @@
-
+/* eslint-disable */
 import React from 'react'
 
-const CP1 = (parms) => {
+const CP1 = (parms : any) => {
   return (
     <div className="flex relative !pt-10 !pb-20 sm:items-center md:w-2/3 !mx-auto">
     <div className="h-full w-6 absolute inset-0 flex items-center justify-center">

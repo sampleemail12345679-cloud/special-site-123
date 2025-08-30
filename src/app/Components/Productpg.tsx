@@ -10,7 +10,8 @@ import Image from 'next/image'
 
 const Productpg = (parms: any) => {
   const handleBuyNow = () => {
-    const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
+    const existingCart = JSON.parse(localStorage.getItem("cart") || "[]");
+
   
     const existingItem = existingCart.find((item : any) => item.id === parms.id);
   

@@ -12,7 +12,7 @@ type CartItem = {
   quantity: number;
 };
 
-const Cart = ({ onClose }) => {
+const Cart = ({ onClose } : any) => {
   // Persist cart items automatically in localStorage
   const [items, setItems] = useLocalStorage<CartItem[]>("cart", []);
 

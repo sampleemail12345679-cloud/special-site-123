@@ -5,14 +5,14 @@ import "../App.css"
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
-export default function CheckoutBT({ total }: { total: number }) {
+export default function CheckoutBT({ props }: any) {
   const handleClick = async () => {
     const res = await fetch("/api/create-checkout-session", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ total: Number(total) / 83 }),
+      body: JSON.stringify({ total: Number(props.total) / 83 }),
     });
 
     const data = await res.json();
@@ -30,6 +30,7 @@ export default function CheckoutBT({ total }: { total: number }) {
     <button
       onClick={handleClick}
       className="w-full bt !mt-12 "
+      disabled={props.disabled}
     >
       Checkout
     </button>

@@ -26,7 +26,7 @@ export default function Products() {
 
 
   // Filter products based on current filters
-  const applyFilters = (newFilters) => {
+  const applyFilters = (newFilters : any) => {
     let filtered = data.filter((product) => {
       // Price filter
       if (product.price < newFilters.minPrice || product.price > newFilters.maxPrice) {
@@ -74,7 +74,7 @@ export default function Products() {
     setFilteredProducts(filtered);
   };
 
-  const handleFilterApply = (newFilters) => {
+  const handleFilterApply = (newFilters :any) => {
     setFilters(newFilters);
     applyFilters(newFilters);
     setShowOffers(false);

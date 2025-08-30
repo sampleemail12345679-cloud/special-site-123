@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 
-const Offers = ({ onApplyFilters, onClose, currentFilters }) => {
+const Offers = ({ onApplyFilters, onClose, currentFilters }: any) => {
     const [minPrice, setMinPrice] = useState(currentFilters?.minPrice || 0);
     const [maxPrice, setMaxPrice] = useState(currentFilters?.maxPrice || 100000000);
     const [strapMaterial, setStrapMaterial] = useState(currentFilters?.strapMaterial || '');
@@ -27,7 +27,7 @@ const Offers = ({ onApplyFilters, onClose, currentFilters }) => {
     };
 
     // Auto-adjust max price when min price changes
-    const handleMinPriceChange = (value) => {
+    const handleMinPriceChange = (value : any) => {
         const newMinPrice = Number(value);
         setMinPrice(newMinPrice);
 
@@ -38,7 +38,7 @@ const Offers = ({ onApplyFilters, onClose, currentFilters }) => {
     };
 
     // Auto-adjust min price when max price changes
-    const handleMaxPriceChange = (value) => {
+    const handleMaxPriceChange = (value : any) => {
         const newMaxPrice = Number(value);
         setMaxPrice(newMaxPrice);
 
